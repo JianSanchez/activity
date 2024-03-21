@@ -1,0 +1,160 @@
+// Car Company
+###Get All Car Company
+GET http://localhost:3000/carcompany
+
+### Get a Single Car Company
+POST http://localhost:3000/carcompany
+Content-Type: application/json
+
+{
+    "carName": "Honda",
+    "carFounder": "Jian",
+    "dateFounded": "August 1, 1999"
+}
+
+### Update a single Car Company
+PATCH http://localhost:3000/carcompany
+Content-Type: application/json
+
+{
+    "carName": "Suzuki",
+    "carFounder": "Jeffery",
+    "dateFounded": "August 2, 1999"
+}
+
+### Delete a single Car Company
+DELETE http://localhost:3000/carcompany
+
+
+// Car Details
+###Get All Car
+GET http://localhost:3000/cardetails
+
+### Get a Single Car
+POST http://localhost:3000/cardetails
+Content-Type: application/json
+
+{
+    "carBrand": "Honda",
+    "carName": "SUV",
+    "carSerialNumber": "123456",
+    "quantity": "100000"
+}
+
+### Update a single Car
+PATCH http://localhost:3000/cardetails/65f2a8263d47603e6041607d
+Content-Type: application/json
+
+{
+    "carBrand": "Toyota",
+    "carName": "Truck",
+    "carSerialNumber": "654321",
+    "quantity": "2"
+
+}
+
+### Delete a single Car
+DELETE http://localhost:3000/cardetails/65f2a8263d47603e6041607d
+
+
+
+
+// Employee Details
+###Get All Car
+GET http://localhost:3000/employeedetails
+
+### Get a Single Car
+POST http://localhost:3000/employeedetails
+Content-Type: application/json
+
+{
+    "firstName": "Jeffrey",
+    "middleName": "G",
+    "lastName": "Roa",
+    "address": "Balay",
+    "birthday": "August 23, 2002",
+    "position": "Tig arsa"
+}
+
+### Update a single Car
+PATCH http://localhost:3000/employeedetails/65f2aaa30742e017e4cb9065
+Content-Type: application/json
+
+{
+    "firstName": "Jian",
+    "middleName": "L",
+    "lastName": "Sanchez",
+    "address": "Balay",
+    "birthday": "August 23, 1111",
+    "position": "Tig sabaw"
+}
+
+### Delete a single Car
+DELETE http://localhost:3000/employeedetails/65f2aaa30742e017e4cb9065
+
+
+
+
+
+// Inventory
+###Get All Car
+GET http://localhost:3000/inventory
+
+### Get a Single Car
+POST http://localhost:3000/inventory
+Content-Type: application/json
+
+{
+    "brandName": "Honda",
+    "quantity": "10"
+}
+
+### Update a single Car
+PATCH http://localhost:3000/inventory/65f2acd76aa437918d777ddf
+Content-Type: application/json
+
+{
+    "brandName": "Suzuki",
+    "quantity": "11"
+}
+
+### Delete a single Car
+DELETE http://localhost:3000/inventory/65f2acd76aa437918d777ddf
+
+
+
+
+// Owner Details
+###Get All Car
+GET http://localhost:3000/ownerdetails
+
+### Get a Single Car
+POST http://localhost:3000/ownerdetails
+Content-Type: application/json
+
+{
+    "carName": "Toyota",
+    "carSerialNumber": "654321",
+    "firstName": "Jian",
+    "middleName": "L",
+    "lastName": "Sanchez",
+    "address": "Balay",
+    "birthday": "August 23, 1111"
+}
+
+### Update a single Car
+PATCH http://localhost:3000/ownerdetails/65f2ad1164a6a708e7e44abc
+Content-Type: application/json
+
+{
+    "carName": "Lambo",
+    "carSerialNumber": "123456",
+    "firstName": "Jeffrey",
+    "middleName": "G",
+    "lastName": "Roa",
+    "address": "Balay",
+    "birthday": "August 23, 2023"
+}
+
+### Delete a single Car
+DELETE http://localhost:3000/ownerdetails/65f2ad1164a6a708e7e44abc
